@@ -1,0 +1,125 @@
+body {
+  color: $color-base !important;
+}
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header-wrapper {
+  background: $bg-header;
+  margin-bottom: 104px;
+}
+.header {
+  min-height: 55px;
+  @include media-breakpoint-up(lg) {
+    line-height: 0;
+  }
+}
+.navbar-nav {
+  padding-top: 10px;
+  @include media-breakpoint-up(lg) {
+    width: 630px;
+  }
+}
+.nav-item {
+  .nav-link {
+    color: $navigation-color;
+    font-size: $font-size-sm;
+    line-height: 0.7;
+    font-weight: 600;
+    padding-top: 8px;
+    padding-right: 10px;
+    &:hover {
+      color: $border-color;
+    }
+    @include media-breakpoint-up(lg) {
+      border: 2px solid transparent;
+      &:hover {
+        border: 2px solid $navigation-color;
+        border-radius: 3px;
+        color: $navigation-color;
+      }
+    }
+  }
+  .active {
+    @include media-breakpoint-up(lg) {
+      color: $link-color !important;
+      border: 2px solid $border-color;
+      border-radius: 3px;
+      &:hover {
+        border-color: $border-color;
+        color: $link-color !important;
+      }
+    }
+  }
+}
+.data {
+  overflow: hidden;
+  .columns {
+    margin-top: 0;
+    margin-right: 30px;
+    @include media-breakpoint-between(sm, md) {
+      max-width: 76%;
+      margin: auto;
+    }
+    @include media-breakpoint-up(xxl) {
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 42px;
+      margin-left: 0;
+    }
+  }
+  .block {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      padding-right: 20px;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding-right: 12px;
+    }
+  }
+  h2 {
+    font-family: "Quattrocento Sans", sans-serif;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 83px;
+    letter-spacing: -1.8px;
+    &:before {
+      content: "";
+      position: absolute;
+      background: #e1e6ea;
+      width: 10px;
+      height: 35px;
+      top: 0px;
+      left: -1px;
+    }
+  }
+  span {
+    display: block;
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 32px;
+  }
+  .customization {
+    background: url("../../images/sprite.png") no-repeat -10px -8px;
+  }
+
+  .design {
+    background: url("../../images/sprite.png") no-repeat -69px -8px;
+  }
+  .mobile {
+    background: url("../../images/sprite.png") no-repeat -121px -8px;
+  }
+  .support {
+    background: url("../../images/sprite.png") no-repeat -183px -8px;
+  }
+  h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    margin-bottom: 18px;
+    letter-spacing: -0.5px;
+  }
+  .row p {
+    cursor: pointer;
+  }
+}
